@@ -1,4 +1,6 @@
-package Interface;
+package view;
+
+import user.User;
 
 /**
  * @program: Register&Login
@@ -8,8 +10,8 @@ package Interface;
  **/
 public interface UserView {
 
-    void login();
+    void login(User users[]);
 
-    void register();
+    void register(User users[]);
 
 }

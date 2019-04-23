@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理系统</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="AdminLogin.css">
+
+</head>
+<body>
+<div class="main">
+    <div class="loginMenu">
+        <div id="title">
+            <a>管理员登陆</a>
+        </div>
+        <div class="form" id="input_ID">
+            ID：<input type="text" name="input_id" id="_inputID"/>
+        </div>
+        <div class="form" id="input_username">
+            用户名：<input type="text" name="input_username" id="_inputUsername"/>
+        </div>
+        <div class="form" id="input_password">
+            密码：<input type="password" name="input_password" id="_inputPassword"/>
+        </div>
+
+        <div id="button">
+            <form onsubmit="return false">
+                <button id="loginBtn">登陆</button>
+                <button id="registerBtn">重置</button>
+                <a href="StudentLogin.html">学生登陆</a>
+            </form>
+        </div>
+
+    </div>
+    <a id="alert"></a>
+</div>
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="AdminLogin.js"></script>
+
+</body>
+</html>

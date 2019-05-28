@@ -1,0 +1,142 @@
+<!DOCTYPE>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>睿乐GO商城</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper4/css/swiper.min.css">
+</head>
+<body>
+    <div id="main">
+
+        <!--顶部窄红框-->
+        <div id="top"></div>
+
+        <!--logo，产品列表，导航栏，购物车，标签栏，搜索-->
+        <div id="header">
+
+            <!--左半部分 logo框-->
+            <div id="header_left">
+                <div id="logo">
+                    <img src="pic/logo.svg">
+                    <div id="logo_bottom">
+                        <span class="icon-list"></span>
+                        <a>产品分类</a>
+                    </div>
+                </div>
+                <ul id="product_list">
+                    <li class="product_item">手机数码</li>
+                    <li class="product_item">笔记本电脑</li>
+                    <li class="product_item">平板电脑</li>
+                    <li class="product_item">超市</li>
+                    <li class="product_item">生鲜</li>
+                    <li class="product_item">男装</li>
+                    <li class="product_item">家电</li>
+                    <li class="product_item">女装</li>
+                    <li class="product_item">数码相机</li>
+                </ul>
+            </div>
+            <div id="header_right">
+                <div id="header_right_top">
+                    <a id="myCount" product_id="250">我的账户</a>
+                    <a>我的收藏</a>
+                    <a>联系我们</a>
+                    <a>查看</a>
+                    <a>登录</a>
+                    <div id="cart">
+                        <div id="cart_item">
+                            <a id="shoppingNumber_in_cart">(0)</a>
+                            <span class="icon-cart"></span>
+                            <a>项目</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="header_right_bottom">
+                    <div id="tab">
+                        <h1>常见问题</h1>
+                        <h1>关于我们</h1>
+                        <h1>网页</h1>
+                        <h1>联系我们</h1>
+                    </div>
+                    <div id="search">
+                        <input id="search_input" placeholder="搜索你想要的产品">
+                        <span class="icon-magnifier"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--第一个banner图,滚动图-->
+        <div class="swiper-container" id="swiper1">
+            <div class="swiper-wrapper"></div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!--最新商品展示-->
+        <div class="lasted-wrapper">
+            <span class="icon-left"></span>
+            <div class="lasted">
+            </div>
+            <span class="icon-right"></span>
+        </div>
+
+        <!--第二个banner图,滚动图-->
+        <div class="swiper-container" id="swiper2">
+            <div class="swiper-wrapper"></div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!--<热卖单品界面>-->
+        <div class="hotTitle"><h1>热卖单品</h1></div>
+        <div class="hot-wrapper">
+            <div class="hot">
+                <div class="left">
+                    <!--<img src="">-->
+                </div>
+                <div class="right">
+                    <div class="righttop">
+                    </div>
+                    <div class="rightbottom">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--banner3-->
+        <div class="banner3"></div>
+
+        <!--电子产品展示栏-->
+        <div class="elctronicTab">
+            <h1 class="tab-item active">手机</h1>
+            <h1 class="tab-item">笔记本</h1>
+            <h1 class="tab-item">平板</h1>
+        </div>
+        <span id="left_elec"><</span>
+        <div class="electronic-wrapper">
+            <div class="electronic"></div>
+        </div>
+        <span id="right_elec">></span>
+        <div class="electronicPoint">
+            <div class="item active"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="swiper4/js/swiper.min.js"></script>
+    <script type="text/javascript" src="home.js"></script>
+</body>
+</html>

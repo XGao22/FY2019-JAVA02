@@ -1,0 +1,604 @@
+/*第一部分为样式联系，没有与后台交互部分*/
+/*第二部分为滚动图联系*/
+
+/*---------------------------第一部分----样式联系------------------------------------*/
+/*主页*/
+#main {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/*顶部红框*/
+#top {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(204, 15, 17);
+}
+
+/*顶部一大堆*/
+#header {
+    width: 100%;
+    height: 156px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*logo部分*/
+#header_left {
+    width: 27%;
+}
+
+#logo {
+    width: 200px;
+    height: 156px;
+    margin: 0 auto;
+    position: relative;
+    left: 35px;
+    box-shadow: 0 0 10px 10px hsla(0, 0%, 90%, .5);
+    /*overflow: hidden;*/
+    border-top: 1px solid #fff;
+    z-index: 2;
+}
+
+#logo img {
+    display: block;
+    width: 140px;
+    height: 67px;
+    margin: 40px auto 15px;
+}
+
+#logo_bottom:after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 60px;
+    background-color: #fff;
+}
+
+#logo_bottom {
+    width: 200px;
+    height: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+#logo_bottom span {
+    margin-right: 26px;
+    color: #ccc;
+    font-size: 20px;
+    font-family: 楷体;
+}
+
+#logo_bottom a {
+    color: #ccc;
+    font-size: 20px;
+    font-family: 楷体;
+}
+
+#logo:hover + #product_list {
+    display: block;
+}
+
+/*下拉列表*/
+#product_list {
+    display: none;
+    position: absolute;
+    left: 111px;
+    background-color: #505050;
+    font-size: 17px;
+    color: #f0f0f0;
+    width: 288px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.product_item {
+    font-family: 微软雅黑;
+    margin: 0 20px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+#product_list:hover {
+    display: block;
+}
+
+/*顶部右半部分*/
+#header_right {
+    width: 73%;
+    margin: 0;
+    padding: 0;
+}
+
+#header_right_top {
+    width: 74%;
+    height: 78px;
+    margin: 0 0 0 170px;
+    font-size: 0;
+}
+
+/*导航栏a标签 */
+#header_right_top a {
+    display: inline-block;
+    background-color: rgb(204, 15, 17);
+    font-size: 14px;
+    height: 45px;
+    font-family: 微软雅黑;
+    color: #eee;
+    line-height: 45px;
+    padding: 0 20px;
+    border-right: 1px solid hsla(0, 0%, 100%, .7);;
+    position: relative;
+    top: 3px;
+    left: 73px;
+}
+
+#myCount {
+    cursor: pointer;
+}
+
+#header_right_top a:hover {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*购物车*/
+#cart {
+    width: 160px;
+    height: 64px;
+    float: right;
+    font-size: 14px;
+    box-shadow: 0 0 10px 10px hsla(0, 0%, 90%, .5);
+    margin-top: 4px;
+    font-family: 微软雅黑;
+}
+
+#cart_item {
+    width: 154px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+    padding: 0;
+    margin: 3px auto;
+    text-align: center;
+}
+
+#cart_item a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    color: #999;
+    background-color: #fff;
+    left: 0;
+    line-height: 56px;
+}
+
+.icon-cart {
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    top: 8px;
+    color: #999;
+}
+
+#shoppingNumber_in_cart {
+    width: 26px;
+    height: 26px;
+}
+
+/*顶部右边下半部分*/
+#header_right_bottom {
+    width: 92%;
+    height: 78px;
+    padding-left: 45px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/*标签栏*/
+#tab {
+    font-weight: bold;
+    width: 554px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#tab h1 {
+    width: 78px;
+    font-size: 18px;
+    font-family: 黑体;
+    line-height: 50px;
+}
+
+/*搜索栏*/
+#search {
+    font-size: 14px;
+    position: relative;
+}
+
+#search_input {
+    margin-top: 14px;
+    padding-left: 20px;
+    width: 300px;
+    height: 48px;
+}
+
+#search span {
+    font-size: 18px;
+    color: #999;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+/*---------------以上为样式联系，没有与后台交互部分--------------------------------------*/
+
+/*-------------------第二部分----滚动图---包括banner1、2、3的样式-----------------------------*/
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+#main .swiper-container .swiper-wrapper .swiper-slide img {
+    width: inherit;
+    height: inherit;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+    background-color: #e72e12;
+}
+
+/*------------------------第三部分--最新商品展示------------------------------------------*/
+.lasted-wrapper {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.lasted {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lasted-wrapper .lasted .item {
+    width: 270px;
+    height: 502px;
+    font-family: 微软雅黑;
+    position: relative;
+}
+
+.lasted-wrapper .lasted .item img {
+    width: inherit;
+    height: 352px;
+}
+
+.lasted-wrapper .lasted .item img:hover + .look111 {
+    visibility: visible;
+}
+
+#main .lasted-wrapper .lasted .item .title {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 65px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #131920;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#main .lasted-wrapper .lasted .item .desc {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 25px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#main .lasted-wrapper .lasted .item .price {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #ff0036;
+    font-weight: bold;
+}
+
+#main .lasted-wrapper .icon-left {
+    width: 23px;
+    height: 23px;
+    float: left;
+    display: inline-block;
+    border: 1px solid #303030;
+    color: #353535;
+    text-align: center;
+    line-height: 23px;
+    position: relative;
+    left: 50px;
+    top: 240px;
+    cursor: pointer;
+}
+
+#main .lasted-wrapper .icon-right {
+    width: 23px;
+    height: 23px;
+    float: right;
+    display: inline-block;
+    border: 1px solid #303030;
+    color: #353535;
+    text-align: center;
+    line-height: 23px;
+    position: relative;
+    right: 50px;
+    top: -265px;
+    cursor: pointer;
+}
+
+.look111 {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border: 1px solid red;
+    text-align: center;
+    cursor: pointer;
+    background-image: url("pic/look.png");
+}
+
+.look111:hover {
+    visibility: visible;
+}
+
+/*----------------------------热卖商品展示---------------------------------------*/
+#main .hotTitle {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#main .hotTitle h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #131920;
+    font-family: 微软雅黑;
+}
+
+#main .hot-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#main .hot-wrapper .hot {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#main .hot-wrapper .hot .left {
+    width: 370px;
+    height: 540px;
+}
+
+#main .hot-wrapper .hot .left img {
+    width: inherit;
+    height: inherit;
+}
+
+#main .hot-wrapper .hot .right {
+    width: 770px;
+    height: 540px;
+    margin-left: 30px;
+}
+
+#main .hot-wrapper .hot .right .righttop {
+    width: 770px;
+    height: 256px;
+}
+
+#main .hot-wrapper .hot .right .righttop img {
+    width: inherit;
+    height: inherit;
+}
+
+#main .hot-wrapper .hot .right .rightbottom {
+    width: 770px;
+    height: 256px;
+    display: flex;
+    margin-top: 28px;
+    justify-content: space-between;
+}
+
+#main .hot-wrapper .hot .right .rightbottom img {
+    width: 370px;
+    height: 256px;
+}
+
+/*--------------------------------------banner3--------------------------------------------*/
+.banner3 {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.banner3 img {
+    width: inherit;
+}
+
+/*-------------------------------------电子商品展示栏------------------------------------------*/
+.elctronicTab {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.tab-item {
+    display: inline-block;
+    margin: 0;
+    color: #999;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.elctronicTab .active {
+    font-size: 20px;
+    color: #131920;
+}
+
+.elctronicTab .active:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 40px;
+    background-color: #cc0f11;
+}
+
+.tab-item:nth-child(1) {
+    margin-right: 54px;
+}
+
+.tab-item:nth-child(2) {
+    margin-right: 40px;
+}
+
+.electronic-wrapper {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.electronic {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.electronic-wrapper .electronic .item {
+    width: 270px;
+    height: 502px;
+    font-family: 微软雅黑;
+}
+
+.electronic-wrapper .electronic .item img {
+    width: inherit;
+    height: 352px;
+}
+
+#main .electronic-wrapper .electronic .item .title {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 65px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #131920;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#main .electronic-wrapper .electronic .item .desc {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 25px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#main .electronic-wrapper .electronic .item .price {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #ff0036;
+    font-weight: bold;
+}
+
+#main .electronicPoint {
+    width: 260px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main .electronicPoint .item {
+    width: 50px;
+    height: 3px;
+    background-color: #2d3a4b;
+    cursor: pointer;
+}
+
+#main .electronicPoint .active {
+    background-color: #cc0f11;
+}
+
+#left_elec {
+    display: inline-block;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 400px;
+    left: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#right_elec {
+    display: inline-block;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    float: right;
+    position: relative;
+    top: -685px;
+    right: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.abcdefg {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

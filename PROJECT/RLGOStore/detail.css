@@ -1,0 +1,47 @@
+.item {
+    width: 270px;
+    height: 502px;
+    font-family: 微软雅黑;
+}
+
+.item img {
+    width: inherit;
+    height: 352px;
+}
+
+.item .title {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 65px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #131920;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item .desc {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 25px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item .price {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #ff0036;
+    font-weight: bold;
+}
